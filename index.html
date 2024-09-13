@@ -6,69 +6,126 @@
   <title>Portfolio de Data Analyst</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
       margin: 0;
-      padding: 20px;
-      background-color: #f4f4f4;
-    }
-    header {
-      background-color: #333;
-      color: white;
-      padding: 15px 0;
-      text-align: center;
-    }
-    section {
-      margin: 20px;
-    }
-    .project {
-      margin-bottom: 30px;
-    }
-    h1, h2 {
+      padding: 0;
+      background-color: #f0f2f5;
       color: #333;
     }
-    a {
-      color: #0066cc;
+    header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 30px 0;
+      text-align: center;
+      font-size: 2.5em;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    h2 {
+      color: #4CAF50;
+      text-align: center;
+      font-size: 2em;
+      margin-bottom: 40px;
+    }
+    .project {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-bottom: 50px;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .project:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+    .project img {
+      width: 40%;
+      border-radius: 10px;
+      margin: 0 20px;
+      transition: transform 0.3s ease;
+    }
+    .project img:hover {
+      transform: scale(1.05);
+    }
+    .project-content {
+      max-width: 600px;
+    }
+    .project-content h3 {
+      margin-top: 0;
+      font-size: 1.8em;
+      color: #333;
+    }
+    .project-content p {
+      font-size: 1.1em;
+      color: #555;
+    }
+    .project-content a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    .project-content a:hover {
+      background-color: #45a049;
     }
     footer {
       background-color: #333;
       color: white;
       text-align: center;
-      padding: 10px 0;
-      margin-top: 30px;
+      padding: 20px 0;
+      margin-top: 50px;
     }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>Portfolio de Data Analyst</h1>
+  Portfolio de Data Analyst
 </header>
 
 <section>
   <h2>Mes Projets</h2>
 
   <div class="project">
-    <h3>Analyse du Circuit de Tennis ATP sur 20 ans</h3>
-    <p>Analyse des performances des joueurs sur le circuit ATP au cours des 20 dernières années à travers des visualisations interactives sur Power BI.</p>
-    <a href="#">Lien vers le projet Power BI (à remplacer)</a>
+    <img src="https://example.com/atp_tennis_image.jpg" alt="Analyse ATP Tennis">
+    <div class="project-content">
+      <h3>Analyse du Circuit de Tennis ATP sur 20 ans</h3>
+      <p>Cette analyse des performances des joueurs sur le circuit ATP couvre les 20 dernières années avec des visualisations interactives réalisées sur Power BI.</p>
+      <a href="#">Voir le projet sur Power BI</a>
+    </div>
   </div>
 
   <div class="project">
-    <h3>Analyse des Coupes du Monde de Football jusqu'à 2018</h3>
-    <p>Visualisation des données de toutes les Coupes du Monde de football jusqu'à 2018 en utilisant Power BI pour explorer les résultats, les équipes et les performances des joueurs.</p>
-    <a href="#">Lien vers le projet Power BI (à remplacer)</a>
+    <img src="https://example.com/world_cup_image.jpg" alt="Analyse Coupe du Monde">
+    <div class="project-content">
+      <h3>Analyse des Coupes du Monde de Football jusqu'à 2018</h3>
+      <p>Explorez les résultats, les équipes et les performances des joueurs à travers toutes les Coupes du Monde jusqu'en 2018 grâce à ce tableau de bord Power BI.</p>
+      <a href="#">Voir le projet sur Power BI</a>
+    </div>
   </div>
 
   <div class="project">
-    <h3>Analyse des Films Disney</h3>
-    <p>Une analyse des films Disney réalisée avec Tableau Public, comprenant des visualisations sur les revenus, les critiques et les tendances à travers le temps.</p>
-    <a href="https://public.tableau.com/views/exemple">Voir sur Tableau Public</a> <!-- Remplacez ce lien par le lien correct -->
+    <img src="https://example.com/disney_films_image.jpg" alt="Analyse Films Disney">
+    <div class="project-content">
+      <h3>Analyse des Films Disney</h3>
+      <p>Une exploration des films Disney, incluant des visualisations sur les revenus, les critiques et les tendances, réalisée avec Tableau Public.</p>
+      <a href="https://public.tableau.com/views/exemple">Voir sur Tableau Public</a>
+    </div>
   </div>
 
 </section>
 
 <footer>
-  <p>© 2024 Votre Nom. Portfolio de Data Analyst.</p>
+  © 2024 Votre Nom. Portfolio de Data Analyst.
 </footer>
 
 </body>

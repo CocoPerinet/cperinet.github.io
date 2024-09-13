@@ -6,76 +6,97 @@
   <title>Portfolio de Data Analyst</title>
   <style>
     body {
-      font-family: 'Helvetica Neue', Arial, sans-serif;
+      font-family: 'Poppins', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f0f2f5;
+      background-color: #e0e7ff;
       color: #333;
     }
     header {
-      background-color: #4CAF50;
+      background: linear-gradient(135deg, #007BFF, #00CFFF);
       color: white;
-      padding: 30px 0;
+      padding: 50px 0;
       text-align: center;
-      font-size: 2.5em;
+      font-size: 3em;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     }
     section {
-      padding: 40px 20px;
+      padding: 60px 20px;
       max-width: 1200px;
       margin: 0 auto;
     }
     h2 {
-      color: #4CAF50;
+      color: #007BFF;
       text-align: center;
-      font-size: 2em;
+      font-size: 2.5em;
       margin-bottom: 40px;
+      position: relative;
+    }
+    h2::after {
+      content: "";
+      display: block;
+      width: 100px;
+      height: 4px;
+      background: #007BFF;
+      margin: 20px auto;
+      border-radius: 2px;
     }
     .project {
       display: flex;
       flex-direction: row;
       align-items: center;
-      margin-bottom: 50px;
+      margin-bottom: 60px;
       background: white;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
     .project:nth-child(even) {
       flex-direction: row-reverse;
     }
+    .project:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    }
     .project img {
-      width: 40%;
-      border-radius: 10px;
-      margin: 0 20px;
+      width: 45%;
+      border-radius: 15px;
+      margin: 0 30px;
       transition: transform 0.3s ease;
     }
     .project img:hover {
-      transform: scale(1.05);
+      transform: scale(1.08);
     }
     .project-content {
       max-width: 600px;
     }
     .project-content h3 {
       margin-top: 0;
-      font-size: 1.8em;
-      color: #333;
+      font-size: 2em;
+      color: #007BFF;
+      letter-spacing: 0.05em;
     }
     .project-content p {
-      font-size: 1.1em;
+      font-size: 1.2em;
       color: #555;
+      line-height: 1.6em;
     }
     .project-content a {
       display: inline-block;
-      margin-top: 10px;
-      padding: 10px 20px;
-      background-color: #4CAF50;
+      margin-top: 15px;
+      padding: 12px 25px;
+      background-color: #007BFF;
       color: white;
       text-decoration: none;
-      border-radius: 5px;
+      border-radius: 8px;
       transition: background-color 0.3s ease;
+      font-weight: bold;
     }
     .project-content a:hover {
-      background-color: #45a049;
+      background-color: #0056b3;
     }
     footer {
       background-color: #333;
@@ -83,6 +104,9 @@
       text-align: center;
       padding: 20px 0;
       margin-top: 50px;
+    }
+    footer p {
+      margin: 0;
     }
   </style>
 </head>
@@ -100,16 +124,16 @@
     <div class="project-content">
       <h3>Analyse du Circuit de Tennis ATP sur 20 ans</h3>
       <p>Cette analyse des performances des joueurs sur le circuit ATP couvre les 20 dernières années avec des visualisations interactives réalisées sur Power BI.</p>
-      <a href="#">Voir le projet sur Power BI</a>
+      <a href="#" target="_blank">Voir le projet sur Power BI</a>
     </div>
   </div>
 
   <div class="project">
-    <img src="https://static.cnews.fr/sites/default/files/icon_ap-12454324-taille1200_639f7e3a4889a.jpg" alt="Analyse Coupe du Monde">
+    <img src="https://atptour.shorthandstories.com/atp-tour-corporate/assets/D7t6oKJEIp/210121_nittocourtimage_treated2_brightened-3360x2236.jpg" alt="Analyse Coupe du Monde">
     <div class="project-content">
       <h3>Analyse des Coupes du Monde de Football jusqu'à 2018</h3>
       <p>Explorez les résultats, les équipes et les performances des joueurs à travers toutes les Coupes du Monde jusqu'en 2018 grâce à ce tableau de bord Power BI.</p>
-      <a href="#">Voir le projet sur Power BI</a>
+      <a href="#" target="_blank">Voir le projet sur Power BI</a>
     </div>
   </div>
 
@@ -118,14 +142,14 @@
     <div class="project-content">
       <h3>Analyse des Films Disney</h3>
       <p>Une exploration des films Disney, incluant des visualisations sur les revenus, les critiques et les tendances, réalisée avec Tableau Public.</p>
-      <a href="https://public.tableau.com/app/profile/corentin.perinet/viz/FilmDinsey/Tableaudebord1">Voir sur Tableau Public</a>
+      <a href="https://public.tableau.com/app/profile/corentin.perinet/viz/FilmDinsey/Tableaudebord1" target="_blank">Voir sur Tableau Public</a>
     </div>
   </div>
 
 </section>
 
 <footer>
-  © 2024 Votre Nom. Portfolio de Data Analyst.
+  <p>© 2024 Votre Nom. Portfolio de Data Analyst.</p>
 </footer>
 
 </body>
